@@ -19,6 +19,7 @@
     "react-hook-form": "^7.38.0",
     "react-native": "0.69.6",
     "react-native-web": "~0.18.7",
+    "react-query": "^3.39.2",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, TextInput, SafeAreaView, Button, Alert } from "react-native";
-import { useForm } from "react-hook-form";
 import { useState } from "react";
 
 const styles = StyleSheet.create({
@@ -56,12 +55,8 @@ const styles = StyleSheet.create({
 
 })
 
-export default function Login(){
+export default function Login( {navigation}:any ){
     const [userIDN, setUDN] = useState("");
-    async function handleLogin(){
-        const response = await Login();
-        console.log(response);
-    }
     return(
         <View style={styles.screenStyle}>
             <View style={styles.imageConteiner}>
@@ -81,7 +76,7 @@ export default function Login(){
                     <Button
                         title="Press me"
                         color="#f194ff"
-                        onPress={() => Alert.alert('Button with adjusted color pressed')}
+                        onPress={() => navigation.navigate('Task')}
                     />
                 </View>
 
